@@ -1,0 +1,17 @@
+h1 {
+  color: red;
+}
+
+li span.task-done {
+  text-decoration: line-through;
+  color: green;
+}
+
+li span.task-text {
+  display: inline-block;
+  width: 12em;
+  text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
