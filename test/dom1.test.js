@@ -11,7 +11,7 @@ describe('DOM Rendering', function () {
     let deleteButton = taskItems[0].querySelector('button');
     TestUtils.Simulate.click(deleteButton);
     let taskItemsAfterClick = TestUtils.scryRenderedDOMComponentsWithTag(app, 'li');
-    expect(taskItemsAfterClick.length).to.equal(taskLength - 2);
+    expect(taskItemsAfterClick.length).to.equal(taskLength - 1);
   });
 });
 
